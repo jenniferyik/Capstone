@@ -1,5 +1,12 @@
-# CIND820 - Big Data Analytics Capstone Project
-This is the repository for my Capstone project for the final course towrad the Certificate in Data Analytics, Big Data, and Predictive Analytics from Toronto Metropolitan University.
+## CIND820 - Big Data Analytics Capstone Project
+
+# 📊 Modeling the Impact of Economic, Lifestyle, and Demographic Factors on Health Outcomes Using Regression and Time Series Techniques
+
+## 🔍 Project Overview
+This is the repository for my Capstone project for the final course towrad the Certificate in Data Analytics, Big Data, and Predictive Analytics from Toronto Metropolitan University, exploring the relationship between socioeconomic factors and the prevalence of non-communicable diseases (NCDs), such as diabetes, cardiovascular diseases, and life expectancy trends.
+The objective of the project is to identify significant predictors of health outcomes using robust time-series analysis, feature engineering, and machine learning models, with appropriate preprocessing, validation, and diagnostics.
+
+
 
 ## Abstract
 This project analyzes the impact of economic, lifestyle, and demographic factors on global public health outcomes, focusing specifically on the prevalence of non-communicable disease (NCDs) such as heart disease and diabetes, as well as life expectancy. Using a consolidated dataset of 21,514 global observations across 18 variables from 16 sources compiled by Our World in Data, covering the period 1950 to 2023, this study applies multiple linear regression and time series forecasting techniques to explore historical patterns and predict future health trends.
@@ -9,9 +16,6 @@ By identifying influential predictors and modeling long-term trends, this resear
 
 ## Problem Statement
 This project investigates the extent to which socioeconomic, demographic, and lifestyle factors are associated with the global prevalence of non-communicable diseases (specifically heart disease and diabetes) and variations in life expectancy. Using a large-scale dataset from Our World In Data which covers the period from 1950 to 2023, this study applies multiple linear regression and time series forecasting techniques to identify the most influential predictors and project future health outcomes up to the year 2073. The goal is to provide a robust, data-driven foundation for understanding the drivers of population health and for anticipating long-term trends.
-
-## Theme
-Modeling the Impact of Economic, Lifestyle, and Demographic Factors on Health Outcomes Using Regression and Time Series Techniques
 
 ## Research Questions
 1.	What are the key socioeconomic, demographic, and lifestyle factors most strongly associated with the prevalence of non-communicable diseases (heart disease and diabetes) across countries from 1950 to 2023?
@@ -24,6 +28,105 @@ The link available at
 [Download the dataset (CSV)](https://github.com/jenniferyik/CIND820_Capstone-Project/blob/main/Health%20Dataset.csv)
 
 ## Literature Review
+
+## 📈 Project Stages
+### Data Collection & Integration
+
+Merged 16 CSV datasets from Our World in Data
+
+Standardized column names and formats (e.g., renamed “Entity” to “Country”)
+
+Joined on Country and Year with outer joins to maximize coverage
+
+### Data Cleaning & Preprocessing
+
+Addressed missing values using tailored imputation (mean, median, mode)
+
+Detected and treated outliers using Winsorization (5th–95th percentile)
+
+Performed variable transformation using Yeo-Johnson to correct skewness and support non-positive values
+
+### Exploratory Data Analysis (EDA)
+
+Assessed variable distributions (histograms, Q-Q plots)
+
+Performed normality checks (Shapiro-Wilk, ADF tests)
+
+Generated correlation matrices and Spearman heatmaps
+
+Investigated multicollinearity using correlation and VIF scores
+
+### Feature Engineering
+
+Created lag features to capture temporal dependencies (e.g., Income_lag1 to lag3)
+
+Standardized all continuous features using StandardScaler
+
+Conducted ACF & PACF analysis to assess autocorrelation structure
+
+### Feature Selection
+
+Compared methods: LASSO, RFE, Random Forest, and Forward Selection
+
+Selected best-performing method per target variable using TimeSeriesSplit + RMSE
+
+Ranked feature importance to identify key predictors
+
+### Model Building
+
+Built models for each of the 3 health outcomes:
+
+Life Expectancy
+
+Diabetes Prevalence
+
+Cardiovascular Diseases
+
+Applied multiple models: Random Forest, ARIMA, Prophet, and Linear Regression
+
+Incorporated HAC standard errors for robust inference in linear models
+
+### Validation Strategy
+
+Used walk-forward (rolling forecast) validation across 10 countries with varying income levels
+
+Ensured no lookahead bias and improved generalizability over time and region
+
+### Model Evaluation & Residual Diagnostics
+
+Used evaluation metrics: RMSE, MAPE, and R²
+
+Conducted residual diagnostics:
+
+ADF Test – stationarity
+
+Breusch–Pagan Test – heteroscedasticity
+
+Ljung–Box Test – autocorrelation
+
+### Forecasting & Interpretation
+
+Generated forecasts and compared predicted vs. actual values
+
+Visualized trends across 10 representative countries
+
+Interpreted model results to extract key health and policy insights
+
+
+
+
+## 📚 Contents
+✅ Jupyter Notebooks: Step-by-step documentation of data preparation, modeling, and evaluation
+
+✅ Technical Reports: PDF and HTML formats summarizing methods, results, and diagnostics
+
+✅ Dataset: Merged CSV file or download link (if file size exceeds GitHub limits)
+
+✅ Figures: Correlation heatmaps, residual plots, forecast charts, etc.
+
+✅ Python Scripts: Helper functions for cleaning, transformation, and preprocessing
+
+✅ Comments & Documentation: All code includes explanatory comments and markdown cells
 
 ## Initial Result and Code
 
