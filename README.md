@@ -1,8 +1,8 @@
 ## CIND820 - Big Data Analytics Capstone Project
 
-# 📊 Modeling the Impact of Economic, Lifestyle, and Demographic Factors on Health Outcomes Using Regression and Time Series Techniques
+# Modeling the Impact of Economic, Lifestyle, and Demographic Factors on Health Outcomes Using Regression and Time Series Techniques
 
-## 🔍 Project Overview
+## Project Overview
 This is the repository for my Capstone project for the final course towrad the Certificate in Data Analytics, Big Data, and Predictive Analytics from Toronto Metropolitan University, exploring the relationship between socioeconomic factors and the prevalence of non-communicable diseases (NCDs), such as diabetes, cardiovascular diseases, and life expectancy trends.
 The objective of the project is to identify significant predictors of health outcomes using robust time-series analysis, feature engineering, and machine learning models, with appropriate preprocessing, validation, and diagnostics.
 
@@ -29,7 +29,7 @@ The link available at
 
 ## Literature Review
 
-## 📈 Project Stages
+## Project Stages
 ### Data Collection & Integration
 
 Merged 16 CSV datasets from Our World in Data
@@ -115,21 +115,20 @@ Interpreted model results to extract key health and policy insights
 
 
 
-## 📚 Contents
-✅ Jupyter Notebooks: Step-by-step documentation of data preparation, modeling, and evaluation
+## Contents
+ Jupyter Notebooks: Step-by-step documentation of data preparation, modeling, and evaluation
 
-✅ Technical Reports: PDF and HTML formats summarizing methods, results, and diagnostics
+ Technical Reports: PDF and HTML formats summarizing methods, results, and diagnostics
 
-✅ Dataset: Merged CSV file or download link (if file size exceeds GitHub limits)
+ Dataset: Merged CSV file or download link (if file size exceeds GitHub limits)
 
-✅ Figures: Correlation heatmaps, residual plots, forecast charts, etc.
+ Figures: Correlation heatmaps, residual plots, forecast charts, etc.
 
-✅ Python Scripts: Helper functions for cleaning, transformation, and preprocessing
+ Python Scripts: Helper functions for cleaning, transformation, and preprocessing
 
-✅ Comments & Documentation: All code includes explanatory comments and markdown cells
+ Comments & Documentation: All code includes explanatory comments and markdown cells
 
-## Initial Result and Code
 
-## Final Result and Project Report
 
-## Project Presentation
+
+
