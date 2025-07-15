@@ -116,15 +116,15 @@ Interpreted model results to extract key health and policy insights
 
 
 ## Contents
- Jupyter Notebooks: Step-by-step documentation of data preparation, modeling, and evaluation
+ Jupyter Notebooks: Documentation of data preparation, modeling, and evaluation
 
- Technical Reports: PDF and HTML formats summarizing methods, results, and diagnostics
+ Technical Reports: HTML formats summarizing methods, results, and diagnostics
 
- Dataset: Merged CSV file or download link (if file size exceeds GitHub limits)
+ Dataset: Merged CSV file or download link 
 
- Figures: Correlation heatmaps, residual plots, forecast charts, etc.
+ Figures: Correlation heatmaps, Residual plots, ACF & PACF Plot, Forecast charts.
 
- Python Scripts: Helper functions for cleaning, transformation, and preprocessing
+ Python Scripts: Functions for cleaning, transformation, and preprocessing
 
  Comments & Documentation: All code includes explanatory comments and markdown cells
 
