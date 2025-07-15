@@ -76,11 +76,11 @@ Ranked feature importance to identify key predictors
 
 Built models for each of the 3 health outcomes:
 
-Life Expectancy
+ * Life Expectancy
 
-Diabetes Prevalence
+ * Diabetes Prevalence
 
-Cardiovascular Diseases
+ * Cardiovascular Diseases
 
 Applied multiple models: Random Forest, ARIMA, Prophet, and Linear Regression
 
