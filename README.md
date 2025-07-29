@@ -18,9 +18,9 @@ By identifying influential predictors and modeling long-term trends, this resear
 This project investigates the extent to which socioeconomic, demographic, and lifestyle factors are associated with the global prevalence of non-communicable diseases (specifically heart disease and diabetes) and variations in life expectancy. Using a large-scale dataset from Our World In Data which covers the period from 1950 to 2023, this study applies multiple linear regression and time series forecasting techniques to identify the most influential predictors and project future health outcomes up to the year 2073. The goal is to provide a robust, data-driven foundation for understanding the drivers of population health and for anticipating long-term trends.
 
 ## Research Questions
-1.	What are the key socioeconomic, demographic, and lifestyle factors most strongly associated with the prevalence of non-communicable diseases (heart disease and diabetes) across countries from 1950 to 2023?
-2.  To what extent do modifiable lifestyle and economic factors (e.g., BMI, cost of healthy diet, income, and CPI) explain variations in life expectancy and population health outcomes across countries?
-3.	How will health outcomes (life expectancy, disease rates) evolve over the next 50 years (2023–2073), based on historical trends and key predictors identified in the period from 1950 to 2023?
+1.	What are the key socioeconomic, demographic, and lifestyle predictors most strongly associated with the prevalence of non-communicable diseases (heart disease and diabetes) across countries from 1950 to 2023?
+2. To what extent do modifiable lifestyle and economic factors (e.g., BMI, cost of healthy diet, income, and CPI) explain variations in life expectancy and population health outcomes across countries?
+3.	3.	How will long-term health outcomes evolve over the next 50 years (2024–2074), based on historical trends and key predictors identified between 1950 and 2023, and which forecasting approaches (ARIMA, Prophet, Random Forest) provide the most accurate projections by country and health indicator?
 
 ## Dataset
 This project analyzes a consolidated dataset sourced from 16 datasets from Our World In Data, covering the period 1950 – 2023 for over 300 countries. The dataset contains data related to demographic, economic, and lifestyle indicators, and health outcome variables, including GDP, income levels, inflation, CPI, unemployment rate, cost of a healthy diet, BMI, sex ratio, medium age, disease prevalence, life expectancy, and mortality. 
