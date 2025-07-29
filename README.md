@@ -6,7 +6,20 @@
 This is the repository for my Capstone project for the final course towrad the Certificate in Data Analytics, Big Data, and Predictive Analytics from Toronto Metropolitan University, exploring the relationship between socioeconomic factors and the prevalence of non-communicable diseases (NCDs), such as diabetes, cardiovascular diseases, and life expectancy trends.
 The objective of the project is to identify significant predictors of health outcomes using robust time-series analysis, feature engineering, and machine learning models, with appropriate preprocessing, validation, and diagnostics.
 
+## Objectives
+1. Identify the key socioeconomic, demographic, and behavioral predictors of non-communicable diseases (NCDs).
+2. Evaluate and compare ARIMA, Prophet, and Random Forest for health forecasting.
+3. Provide long-term projections (2024–2074) to support evidence-based policymaking in public health.
 
+## Health Indicators:
+* Life Expectancy
+* Diabetes Prevalence
+* Cardiovascular Disease Rates
+
+## Predictors:
+* Economics Predictors: GDP, CPI, inflation, income, Unemployment, Gini Coefficient
+* Demographic Predictors: Median age, Sex ratio, Education 
+* LIfestyle Predictors: Cost healthy diet, BMI 
 
 ## Abstract
 This project analyzes the impact of economic, lifestyle, and demographic factors on global public health outcomes, focusing specifically on the prevalence of non-communicable disease (NCDs) such as heart disease and diabetes, as well as life expectancy. Using a consolidated dataset of 21,514 global observations across 18 variables from 16 sources compiled by Our World in Data, covering the period 1950 to 2023, this study applies multiple linear regression and time series forecasting techniques to explore historical patterns and predict future health trends.
@@ -20,12 +33,16 @@ This project investigates the extent to which socioeconomic, demographic, and li
 ## Research Questions
 1.	What are the key socioeconomic, demographic, and lifestyle predictors most strongly associated with the prevalence of non-communicable diseases (heart disease and diabetes) across countries from 1950 to 2023?
 2. To what extent do modifiable lifestyle and economic factors (e.g., BMI, cost of healthy diet, income, and CPI) explain variations in life expectancy and population health outcomes across countries?
-3.	3.	How will long-term health outcomes evolve over the next 50 years (2024–2074), based on historical trends and key predictors identified between 1950 and 2023, and which forecasting approaches (ARIMA, Prophet, Random Forest) provide the most accurate projections by country and health indicator?
+3.	How will long-term health outcomes evolve over the next 50 years (2024–2074), based on historical trends and key predictors identified between 1950 and 2023, and which forecasting approaches (ARIMA, Prophet, Random Forest) provide the most accurate projections by country and health indicator?
 
 ## Dataset
 This project analyzes a consolidated dataset sourced from 16 datasets from Our World In Data, covering the period 1950 – 2023 for over 300 countries. The dataset contains data related to demographic, economic, and lifestyle indicators, and health outcome variables, including GDP, income levels, inflation, CPI, unemployment rate, cost of a healthy diet, BMI, sex ratio, medium age, disease prevalence, life expectancy, and mortality. 
 The link available at
 [Download the dataset (CSV)](https://github.com/jenniferyik/CIND820_Capstone-Project/blob/main/Health%20Dataset.csv)
+
+## Methodology - Techniques and Tools
+* Modeling Techniques: Multiple Linear Regression, ARIMA, Prophet, Random Forest
+* Tools: Python (Pandas, NumPy, scikit-learn, Matplotlib/Seaborn, prophet)
 
 ## Literature Review
 
@@ -53,6 +70,8 @@ Assessed variable distributions (histograms, Q-Q plots)
 Performed normality checks (Shapiro-Wilk, ADF tests)
 
 Generated correlation matrices and Spearman heatmaps
+<img width="1117" height="1003" alt="image" src="https://github.com/user-attachments/assets/5c642f09-bcfc-4fc9-9ad1-0e147b77e1da" />
+
 
 Investigated multicollinearity using correlation and VIF scores
 
@@ -63,10 +82,16 @@ Created lag features to capture temporal dependencies (e.g., Income_lag1 to lag3
 Standardized all continuous features using StandardScaler
 
 Conducted ACF & PACF analysis to assess autocorrelation structure
+<img width="989" height="765" alt="image" src="https://github.com/user-attachments/assets/3d1d408c-8e56-401d-aa45-29ce80c6f5af" />
+<img width="989" height="765" alt="image" src="https://github.com/user-attachments/assets/196ece19-df8f-4783-bb27-f92fbf7871c8" />
 
 ### Feature Selection
 
 Compared methods: LASSO, RFE, Random Forest, and Forward Selection
+<img width="855" height="547" alt="image" src="https://github.com/user-attachments/assets/8acfe6eb-39b8-455c-94d3-c720c8aa3836" />
+<img width="863" height="547" alt="image" src="https://github.com/user-attachments/assets/78838b1a-7a07-40ab-baaa-2c10b53aa713" />
+<img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/311cd7ad-2768-40e2-862c-f399f8e61b5a" />
+
 
 Selected best-performing method per target variable using TimeSeriesSplit + RMSE
 
@@ -108,7 +133,11 @@ Ljung–Box Test – autocorrelation
 
 Generated forecasts and compared predicted vs. actual values
 
-Visualized trends across 10 representative countries
+Forecast Comparison of ARIMA, Prophet, and Random Forest Across Three Targets – Life Expectancy, Diabetes and Cardiovascular Disease between 1950–2074
+<img width="1389" height="590" alt="image" src="https://github.com/user-attachments/assets/21171501-4615-45a2-8941-bf9c68caa297" />
+<img width="1389" height="590" alt="image" src="https://github.com/user-attachments/assets/76d7966f-28b9-4e17-a953-1402be8fee20" />
+<img width="1389" height="590" alt="image" src="https://github.com/user-attachments/assets/9634ce8d-9257-4e0b-a2ac-87341510e60d" />
+
 
 Interpreted model results to extract key health and policy insights
 
