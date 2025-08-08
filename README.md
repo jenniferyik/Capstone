@@ -124,10 +124,14 @@ Applied multiple models: Random Forest, ARIMA, Prophet, and Linear Regression
 Incorporated HAC standard errors for robust inference in linear models
 
 ### Validation Strategy
+Rolling or walk-forward forecast validation is a technique used to evaluate the performance of time series forecasting models in a way that closely resembles real-world forecasting scenarios. Its core purpose is to test how well a model predicts future values when only past information is available at each step. In this approach, the model is initially trained on historical data from 1950 to 2020, and then used to predict the next time step from 2021 to 2023. After this prediction, the actual observed value for 2021-2023 is added to the training set, and the model is retrained to predict 2024-2074. This process is repeated step-by-step, moving forward through time.
 
 Used walk-forward (rolling forecast) validation across 10 countries with varying income levels
 
-Ensured no lookahead bias and improved generalizability over time and region
+Below is the result of Rolling Forecast Summary
+
+<img width="772" height="700" alt="image" src="https://github.com/user-attachments/assets/2db9f9cc-04d3-4246-860d-79f0f60c0d57" />
+
 
 ### Model Evaluation & Residual Diagnostics
 
