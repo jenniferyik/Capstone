@@ -41,6 +41,8 @@ The link available at
 [Download the dataset (CSV)](https://github.com/jenniferyik/CIND820_Capstone-Project/blob/main/Health%20Dataset.csv)
 
 ## Methodology - Techniques and Tools
+The entire analysis is using Python, with libraries like Pandas and NumPy for organizing and cleaning data, scikit-learn and statsmodels for building models, ARIMA, Random Forest and Prophet for time series forecasting, and Matplotlib and Seaborn for creating charts and graphs.
+
 * Modeling Techniques: Multiple Linear Regression, ARIMA, Prophet, Random Forest
 * Tools: Python (Pandas, NumPy, scikit-learn, Matplotlib/Seaborn, prophet)
 
@@ -83,19 +85,29 @@ Standardized all continuous features using StandardScaler
 
 Conducted ACF & PACF analysis to assess autocorrelation structure
 <img width="989" height="765" alt="image" src="https://github.com/user-attachments/assets/3d1d408c-8e56-401d-aa45-29ce80c6f5af" />
-<img width="989" height="765" alt="image" src="https://github.com/user-attachments/assets/196ece19-df8f-4783-bb27-f92fbf7871c8" />
+<img width="989" height="765" alt="image" src="https://github.com/user-attachments/assets/6fae9adf-eafc-4ae7-872e-05015bb35618" />
+<img width="989" height="765" alt="image" src="https://github.com/user-attachments/assets/bec3b23b-7804-4edd-a24e-36b0eb210e78" />
+
 
 ### Feature Selection
+
+To identify the best Feature Selection Method for selecting the strongest features per target variable using TimeSeriesSplit + RMSE
 
 Compared methods: LASSO, RFE, Random Forest, and Forward Selection
 <img width="855" height="547" alt="image" src="https://github.com/user-attachments/assets/8acfe6eb-39b8-455c-94d3-c720c8aa3836" />
 <img width="863" height="547" alt="image" src="https://github.com/user-attachments/assets/78838b1a-7a07-40ab-baaa-2c10b53aa713" />
 <img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/311cd7ad-2768-40e2-862c-f399f8e61b5a" />
 
+Below is the table of the Best Performance per Feature selection methods
+<img width="825" height="625" alt="image" src="https://github.com/user-attachments/assets/ede49ad5-17b9-4a66-8b12-9f91cefb73a9" />
 
-Selected best-performing method per target variable using TimeSeriesSplit + RMSE
+According to the result of Feature Selection Comparison, Forward Selection Method is used for Life Expectancy and Diabetes, and RFE is used for Cardiovascular disease
 
-Ranked feature importance to identify key predictors
+Below is the Bar Charts of ranked feature importance per Target variable:
+<img width="990" height="590" alt="image" src="https://github.com/user-attachments/assets/ebf5d0de-1119-4475-a2c1-f3a93739e6ec" />
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/a6486dd7-a639-47a0-b79f-ed6839c674dc" />
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/490e97a5-d83c-4a83-b910-ee8a3cce03f6" />
+
 
 ### Model Building
 
