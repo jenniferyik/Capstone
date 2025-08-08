@@ -119,7 +119,8 @@ Ensured no lookahead bias and improved generalizability over time and region
 
 ### Model Evaluation & Residual Diagnostics
 
-Used evaluation metrics: RMSE, MAPE, and R²
+<img width="773" height="2189" alt="image" src="https://github.com/user-attachments/assets/6f674ab1-52a8-4bc4-ae51-d50f6b378247" />
+
 
 Conducted residual diagnostics:
 
