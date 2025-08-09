@@ -155,8 +155,10 @@ Feature Importance Findings:
 *	Diabetes: BMI_avg_lag3, Income, GDP, Cost of a healthy diet, Median age_lag3, Income_lag3, GDP_lag3, Sex ratio_lag3, Sex ratio, Income_Lag1
 *	Cardiovascular Disease: BMI_avg_lag3, GDP, Income, BMI-avg_lag1, BMI_avg, education level, GDP_lag3, Income_lag3, Income_lag2, Income_lag1
 
-
-
+Model Results Overview: Summary of Predictive Accuracy:
+*	Life Expectancy: Random Forest is best suited due to its capacity to model complex, nonlinear relationships across socioeconomic indicators.
+*	Diabetes: ARIMA delivers the highest precision due to the temporal consistency of prevalence patterns.
+*	CVD: ARIMA generally performs best, but Random Forest may outperform in countries with more variability. Prophet is less reliable in volatile or non-stationary contexts.
 
 
 ### Forecasting & Interpretation
@@ -168,24 +170,22 @@ Forecast Comparison of ARIMA, Prophet, and Random Forest Across Three Targets �
 <img width="1389" height="590" alt="image" src="https://github.com/user-attachments/assets/76d7966f-28b9-4e17-a953-1402be8fee20" />
 <img width="1389" height="590" alt="image" src="https://github.com/user-attachments/assets/9634ce8d-9257-4e0b-a2ac-87341510e60d" />
 
+* Life Expectancy: Life expectancy increased globally from 1950 to 2020, with setbacks in LMICs during 1980–2000 and a global drop during the COVID-19 pandemic (2021–2023). RF predicted stable future trends; ARIMA followed recent national patterns, and Prophet projected recovery post-pandemic. Model outputs highlight both structural drivers (e.g., GDP) and the impact of health crises.
+* Diabetes: Diabetes prevalence rose steadily from 1980 to 2020, especially in LMICs, driven by rising BMI and economic transitions. Forecasts from 2024–2074 diverged: Prophet projected continued increases, while ARIMA and RF predicted flatter or declining trends in some countries (e.g., Germany, Kenya). ARIMA and RF aligned more closely with 2021–2023 data, confirming better short-term accuracy.
+* Cardiovascular Disease: Cardiovascular disease (CVD) rates surged after 2000 due to aging and lifestyle changes, except in countries like Indonesia and Kenya, where rates declined due to targeted health policies. From 2024–2074, RF projected flat trends, ARIMA anticipated moderate rises, and Prophet forecasted widespread increases—except in countries with effective interventions.
 
-Interpreted model results to extract key health and policy insights
+### Future Work 
+•	Health Policy Interventions
+Policymakers should use the most influential predictors, such as child mortality, BMI and income for policy interventions. Investing in early childhood health and expanding educational access may yield long-term improvements in life expectancy.
+•	Build Real-Time Health Monitoring Systems
+Governments could develop real-time health monitoring platforms using machine learning models to detect disease trends (e.g., cardiovascular conditions). This would enable faster policy responses and strategic planning.
+•	Promote Health Lifestyle
+Governments could actively promote healthy behaviors such as physical activity and nutritious diets. Prior research highlights BMI as a critical factor influencing disease prevalence, underscoring the importance of lifestyle interventions.
 
 
 
 
-## Contents
- Jupyter Notebooks: Documentation of data preparation, modeling, and evaluation
 
- Technical Reports: HTML formats summarizing methods, results, and diagnostics
-
- Dataset: Merged CSV file or download link 
-
- Figures: Correlation heatmaps, Residual plots, ACF & PACF Plot, Forecast charts.
-
- Python Scripts: Functions for cleaning, transformation, and preprocessing
-
- Comments & Documentation: All code includes explanatory comments and markdown cells
 
 
 
