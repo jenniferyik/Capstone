@@ -149,6 +149,15 @@ Ljung–Box Test – autocorrelation
 Below is the result of residual diagnostics tests:
 <img width="975" height="84" alt="image" src="https://github.com/user-attachments/assets/b066de1f-fd5e-4919-bfcd-2025a3029b9d" />
 
+### Findings 
+Feature Importance Findings:
+*	Life Expectancy: Child mortality rate, Child mortality rate_lag3, Child mortality rate_lag2, Income_lag3, GDP, BMI_avg, Sex ratio, Median age_lag3, Sex ratio_lag3, Sex ratio_lag2, all emerged as significant (p < 0.05).
+*	Diabetes: BMI_avg_lag3, Income, GDP, Cost of a healthy diet, Median age_lag3, Income_lag3, GDP_lag3, Sex ratio_lag3, Sex ratio, Income_Lag1
+*	Cardiovascular Disease: BMI_avg_lag3, GDP, Income, BMI-avg_lag1, BMI_avg, education level, GDP_lag3, Income_lag3, Income_lag2, Income_lag1
+
+
+
+
 
 ### Forecasting & Interpretation
 
