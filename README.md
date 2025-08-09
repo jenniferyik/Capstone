@@ -177,8 +177,10 @@ Forecast Comparison of ARIMA, Prophet, and Random Forest Across Three Targets �
 ### Future Work 
 •	Health Policy Interventions
 Policymakers should use the most influential predictors, such as child mortality, BMI and income for policy interventions. Investing in early childhood health and expanding educational access may yield long-term improvements in life expectancy.
+
 •	Build Real-Time Health Monitoring Systems
 Governments could develop real-time health monitoring platforms using machine learning models to detect disease trends (e.g., cardiovascular conditions). This would enable faster policy responses and strategic planning.
+
 •	Promote Health Lifestyle
 Governments could actively promote healthy behaviors such as physical activity and nutritious diets. Prior research highlights BMI as a critical factor influencing disease prevalence, underscoring the importance of lifestyle interventions.
 
