@@ -163,7 +163,7 @@ Model Results Overview: Summary of Predictive Accuracy:
 
 ### Forecasting & Interpretation
 
-Generated forecasts and compared predicted vs. actual values
+Generated forecasts and compared predicted vs. actual values (Germany has been selected for the sample of the forecast charts)
 
 Forecast Comparison of ARIMA, Prophet, and Random Forest Across Three Targets – Life Expectancy, Diabetes and Cardiovascular Disease between 1950–2074
 <img width="1389" height="590" alt="image" src="https://github.com/user-attachments/assets/21171501-4615-45a2-8941-bf9c68caa297" />
