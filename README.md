@@ -1,4 +1,4 @@
-## CIND820 - Big Data Analytics Capstone Project
+## Big Data Analytics Capstone Project
 
 # Modeling the Impact of Economic, Lifestyle, and Demographic Factors on Health Outcomes Using Regression and Time Series Techniques
 
